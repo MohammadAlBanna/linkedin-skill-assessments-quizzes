@@ -466,11 +466,11 @@ fs.appendFile('hello.txt', `Hello ${user} on ${system}`, (err) => { if (err) thr
 #### Q56. Which choice is `not` a Node global object?
 
 - [ ] process
-- [ ] exports
+- [x] exports
 - [ ] setTimeout
-- [x] Buffer
+- [ ] Buffer
 
-**Explanation:** _process, exports and setTimeout are global objects, Buffer isn't (please see https://nodejs.org/api/globals.html)_
+**Explanation:** _`exports` may appear to be global but is not (please see https://nodejs.org/api/globals.html#exports)._
 
 #### Q57. What is the correct way to pipe a readable stream and a writable stream?
 
@@ -596,10 +596,12 @@ console.log(person);
 
 #### Q71. How can ECMAScript modules be used natively in Node?
 
-- [x] ECMAScript modules cannot be used natively in Node.
-- [ ] ECMAScript modules can be used natively in Node with the .mjs file extension
+- [ ] ECMAScript modules cannot be used natively in Node.
+- [x] ECMAScript modules can be used natively in Node with the .mjs file extension
 - [ ] ECMAScript modules can be used natively in Node only by using a compiler like Babel.
 - [ ] ECMAScript modules can be used natively in Node only by using a bundle like webpack.
+
+[Reference](https://nodejs.org/docs/latest/api/packages.html#determining-module-system)
 
 #### Q72. When exploring the Node documentation's features, what are the stability ratings?
 
@@ -680,8 +682,8 @@ server.listen(port, hostname, () => {
 #### Q80. Which choice is not a Node global object?
 
 - [ ] process
-- [ ] exports
+- [x] exports
 - [ ] setTimeout
-- [x] Buffer
+- [ ] Buffer
 
-[Refrence](https://www.w3resource.com/node.js/nodejs-global-object.php)
+[Refrence](https://www.w3resource.com/node.js/nodejs-global-object.php#exports)

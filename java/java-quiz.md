@@ -31,6 +31,8 @@
 - [ ] `b1 || !b2`
 - [ ] `(i1 ^ i2) < 4`
 
+**Reasoning:** i2 && b1 is not allowed between int and boolean.
+
 #### Q4. What is the output of this code?
 
 ```java
@@ -48,6 +50,8 @@
 - [ ] It will not compile because of line 3.
 - [ ] 123
 - [ ] 1234
+
+**Reasoning:** array.size() is invalid, to get size or length of array array.length can be used.
 
 #### Q5. Which of the following can replace the CODE SNIPPET to make the code below print "Hello World"?
 
@@ -70,6 +74,8 @@ interface Interface2 {
 - [ ] `super.print();`
 - [x] `Interface1.print(); Interface2.print();`
 
+- [Reference](https://www.geeksforgeeks.org/static-method-in-interface-in-java/)
+
 #### Q6. What does the following code print?
 
 ```java
@@ -84,6 +90,8 @@ System.out.println(str);
 - [ ] CDE
 - [ ] D
 - [x] "abcde"
+
+**Reasoning:** You should assign the result of trim back to the String variable. Otherwise, it is not going to work, because strings in Java are immutable.
 
 #### Q7. What is the result of this code?
 
@@ -442,7 +450,7 @@ class Main {
 - [ ] The code does not compile.
 - [ ] "ello"
 
-#### Q27. Object-oriented programming is a style of programming where you organize your program around \_ rather than \_ and data rather than logic.
+#### Q27. Object-oriented programming is a style of programming where you organize your program around \_ and data, rather than \_ and logic.
 
 - [ ] functions; actions
 - [x] objects; actions
@@ -2238,6 +2246,8 @@ class variable_scope {
 - [ ] Runtime Error
 - [ ] 5 6 5 6
 - [ ] 5 6 5
+
+**Explanation:** Scope of variable Y is limited
 
 #### Q159. Subclasses of an abstract class are created using the keyword **\_**.
 

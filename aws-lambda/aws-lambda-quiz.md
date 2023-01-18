@@ -422,7 +422,7 @@
 
 #### Q59. You need to quickly understand execution times for two different Lambda functions with different invocation types: asynchronous and synchronous. What do you do?
 
-- [ ] Enable tracing, rerun the lambdas, and view in the lambda console
+- [x] Enable tracing, rerun the lambdas, and view in the lambda console
 - [ ] View the logs in CloudTrail
 - [ ] View the logs in CloudWatch
 - [ ] Enable tracing, rerun the Lambdas, and view in the X-Ray console
@@ -432,4 +432,22 @@
 - [ ] AWS SAM
 - [ ] AWS CLI
 - [ ] AWS CloudFormation
-- [ ] AWS SAM CLI
+- [x] AWS SAM CLI
+
+#### Q61. Your function failed to execute due to a timeout. What type of error is this?
+
+- [ ] Caller
+- [x] Runtime
+- [ ] Request
+- [ ] Account
+
+#### Q62. A company will be modernizing their application which is currently running on Amazon Elastic Cloud Compute (EC2) instances. They have experience with scaling this infrastructure using Amazon EC2 Autoscaling. They want to move to serverless infrastructure consisting of an Amazon API Gateway that triggers Lambda functions. They are consulting you about scaling this new infrastructure. What should the company consider in order to make sure the serverless infrastructure scales to their needs?
+
+- [ ] Enable Auto Scaling Groups for AWS Lambda to ensure that enough Lambda functions are ready to handle the incoming requests
+- [ ] Throttle Lambda functions by configuring reserved concurrency, sending the excess traffic to Dead Letter Queues (DLQ) that will be handled when the request volume reduces.
+- [x] Look at service limits for Amazon API Gateway and Lambda functions used in order to identify potential bottlenecks and balance performance requirements, costs, and business impact
+- [ ] Do nothing. API Gateway and AWS Lambda are managed services that have built-in horizontal scaling, security, and high availability to handle unlimited amount of requests
+
+**Explanation**
+
+In serverless it is important to understand the service limits of all the services used end to end to understand the level of requests that can be handled.

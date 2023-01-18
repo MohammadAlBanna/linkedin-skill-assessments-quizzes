@@ -1049,7 +1049,7 @@ setTimeout(() => {
 console.log('Javascript!');
 ```
 
-- [x]
+- [x] .
 
 ```plaintext
 I
@@ -1057,7 +1057,7 @@ Javascript!
 love
 ```
 
-- [ ]
+- [ ] .
 
 ```plaintext
 love
@@ -1067,9 +1067,9 @@ Javascript!
 
 - [ ] The output may change with each execution of code and cannot be determined.
 
-- [ ]
+- [ ] .
 
-```
+```plaintext
 I
 love
 Javascript!
@@ -1937,7 +1937,7 @@ alert(a++(+(+(+b))));
 - [x] 9
 - [ ] 20
 
-#### Q139. What fragment could you add to this code to make it output "{"type": "tiger"}" to the console?
+#### Q139. Which snippet could you add to this code to print "{"type": "tiger"}" to the console?
 
 ```js
 let cat = { type: "tiger", size: "large" };
@@ -2042,3 +2042,29 @@ print(typeof NaN);
 - [ ] console.log()
 - [ ] window.alert()
 - [x] all of the above
+
+#### Q150. What value is assigned to total after this code executes?
+
+```javascript
+function sum(num1, num2 = 2, num3 = 3) {
+  return num1 + num2 + num3;
+}
+let values = [1, 5];
+let total = sum(4, ...values);
+```
+
+- [x] 10
+- [ ] 6
+- [ ] 7
+- [ ] 8
+
+[Reference: Rest parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters)
+
+#### Q151. Which statement is applicable to the defer attribute of the HTML <script> tag?
+
+- [x] defer allows the browser to continue processing the page while the script loads in the background.
+- [ ] defer causes the script to be loaded from the backup content delivery network (CDN).
+- [ ] defer blocks the browser from processing HTML below the tag until the script is completely loaded.
+- [ ] defer lazy loads the script, causing it to download only when it is called by another script on the page.
+
+[Reference: defer html script attribute](https://www.w3schools.com/tags/att_script_defer.asp)
